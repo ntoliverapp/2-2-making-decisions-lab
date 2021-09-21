@@ -153,13 +153,23 @@ else if (score <= 69 && score >= 60) {
 */
 
 //CODE HERE
-
+const truthCheck = (changeMyMind) =>{ 
+  if(changeMyMind == true){   
+    console.log(`value is ${changeMyMind}`)   
+    changeMyMind = false;   
+    console.log(changeMyMind); } 
+  else if(changeMyMind == false){   
+    console.log(`This value is ${changeMyMind}`)   
+    changeMyMind = true;   
+    console.log(changeMyMind); } 
+}
 
 // Try to change the value of changeMyMind (irrespective of whether it is true or false) and then console.log it's new status. It should log true. Hint: use the not operator.
 
 //CODE HERE
-
-
+const changeMyMind = true;
+truthCheck(!changeMyMind);
+truthCheck(changeMyMind);
 
 
 ////////// PROBLEM 10 //////////
@@ -173,6 +183,7 @@ var myFavoriteNumbers = [4,8,12,16,20,24];
 */
 
 //Code Here
+const someNum = myFavoriteNumbers[4]
 
 
 
@@ -180,8 +191,9 @@ var myFavoriteNumbers = [4,8,12,16,20,24];
 // Use an if statement to check the length of the 'myFavoriteNumbers' array. If it's less than 7, log 'There are not enough elements in this array' to the console. If the length is more than 7, reassign the value of 'someNum' to the value of the 7th element in the array. (Hint: how can you make sure that your code works for exactly 7 elements? What index do you use to get the 7th element?)
 
 //Code Here
-
-
+for(i = 0, i < myFavoriteNumbers.length; i++;) {
+  console.log(myFavoriteNumbers);
+}
 ////////// PROBLEM 11 //////////
 
 // Do not edit the code below.
