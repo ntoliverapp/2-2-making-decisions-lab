@@ -7,6 +7,15 @@
 */
 
 //CODE HERE
+let lovesCode = true
+
+lovesCode = true
+
+if (lovesCode) {
+  console.log('I love to code!')
+} else {
+  console.log ("Coding has it's challenges.")
+}
 
 // For problems 2-3 use the following lines of code:
 var amysAge = 29
@@ -21,7 +30,18 @@ var brittanisBirthYear = 1986
 */
 
 //CODE HERE
-
+let name;
+if (amysAge > brittanisAge || amysBirthYear < brittanisBirthYear) {
+  name = "Amy";
+  console.log(`${name} is older`)
+} 
+else if (amysAge < brittanisAge || brittanisBirthYear > amysBirthYear) {
+ name = "Brittani";
+  console.log(`${name} is older`)
+} 
+else {
+  console.log('Ages are the same')
+}
 
 ////////// PROBLEM 3 //////////
 
@@ -30,8 +50,12 @@ var brittanisBirthYear = 1986
 */
 
 //CODE HERE
-
-
+if (amysBirthYear === brittanisBirthYear) {
+  console.log('Amy and Brittani were born in the same year')
+}
+else {
+  console.log('Amy and Brittani were not born in the same year')
+}
 
 // For problems 4-5 use the following lines of code:
 var arr = [10,20,30,40,50,60]
@@ -42,7 +66,8 @@ var arr = [10,20,30,40,50,60]
 */
 
 //Code Here
-
+let firstItem = 0
+  console.log(arr[0])
 
 ////////// PROBLEM 5 //////////
 /*
@@ -50,6 +75,10 @@ var arr = [10,20,30,40,50,60]
 */
 
 //Code Here
+console.log(arr)
+var lastItemRemoved = arr.pop()
+console.log(lastItemRemoved)
+console.log(arr)
 
 ////////// PROBLEM 6 //////////
 
@@ -62,7 +91,9 @@ var family = ['Tyler', 'Jordan', 'Ryan', 'Alice', 'Ireland'];
 */
 
 //Code Here
-
+for(i = 0; i < family.length; i++) {
+  console.log(family[i])
+}
 
 
 ////////// PROBLEM 7 //////////
@@ -77,13 +108,18 @@ let evensArr = []
 */
 
 //Code Here
+for(i = 0; i < nums.length; i++) {
 
-
-
+if(nums[i] % 2 == 0) { 
+  evensArr.push(nums[i]);
+}
+}
+console.log(evensArr)
 ////////// PROBLEM 8 //////////
 
 // Do not edit the code below.
 var score = 74
+
 // Do not edit the code above.
 
 /*
@@ -91,8 +127,22 @@ var score = 74
 */
 
 //Code Here
-
-
+ 
+if(score >= 90) {
+  console.log('A')
+}
+else if (score <= 89 && score >= 80) {
+  console.log('B')
+}
+else if (score <= 79 && score >= 70) {
+  console.log('C')
+}
+else if (score <= 69 && score >= 60) {
+  console.log('D')
+} else { 
+  (score > 60) 
+  console.log('F')
+}
 ////////// Intermediate Problems //////////
 
 ////////// PROBLEM 9 //////////
